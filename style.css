@@ -1,0 +1,345 @@
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Pacifico&family=Roboto:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Pacifico&family=Rancho&family=Roboto:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@500&family=Lilita+One&family=Pacifico&family=Rancho&family=Roboto:ital@1&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lilita One', cursive;
+}
+
+body {
+    overflow-x: hidden;
+    background-image: url(images/clouds1.jpg);
+    min-height: 100vh;
+}
+
+#header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10000;
+}
+
+#header .logo {
+    color: #094b65;
+    font-weight: 700;
+    font-size: 2em;
+    text-decoration: none;
+}
+
+#header ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#header ul li {
+    list-style: none;
+    margin-left: 20px;
+}
+
+#header ul li a {
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #094b65;
+    border-radius: 20px;
+}
+
+#header ul li a:hover,
+#header ul li a.active {
+    background: #094b65;
+    color: #fff;
+}
+
+section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section #text {
+    position: absolute;
+    color: #094b65;
+    font-size: 10vw;
+    text-align: center;
+    line-height: 0.55em;
+    font-family: 'Rancho', cursive;
+    transform: translateY(-50%);
+}
+
+section #text span {
+    font-size: 0.20em;
+    letter-spacing: 2px;
+    font-weight: 400;
+    font-family: 'Lilita One', cursive;
+}
+
+#btn {
+    text-decoration: none;
+    padding: 8px 30px;
+    display: inline-block;
+    background: #fff;
+    color: #094b65;
+    font-size: 1.2em;
+    font-weight: 500;
+    letter-spacing: 2px;
+    border-radius: 40px;
+    transform: translateY(100px);
+}
+
+section img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    pointer-events: none;
+
+}
+
+section::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    /*background: linear-gradient(to top, #094b65,transparent);*/
+    z-index: 10;
+}
+
+.footer {
+    background-image: url(images/black2.jpeg);
+    background-size: cover;
+    background-position: center;
+    /*background-attachment: fixed;*/
+    background-color: #094b65;
+    background-repeat: no-repeat;
+}
+
+.footer .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 10rem;
+    display: flex;
+
+
+}
+
+.footer .box-container .box h3 {
+    color: var(--white);
+    font-size: 2.5rem;
+    padding-bottom: 2rem;
+    color: #fff;
+    font-family: 'Edu NSW ACT Foundation', cursive;
+}
+
+.footer .box-container .box a {
+    color: var(--light-white);
+    font-size: 1.3rem;
+    padding-bottom: 1rem;
+    display: block;
+    color: black;
+    font-family: 'Edu NSW ACT Foundation', cursive;
+}
+
+.footer .box-container .box a i {
+    color: var(--main-color);
+    padding-right: .5rem;
+    transition: .2s linear;
+    color: green;
+}
+
+.footer .box-container .box a:hover i {
+    padding-right: 2rem;
+}
+
+.card-container {
+    width: 250px;
+    height: auto;
+    position: relative;
+    background: #e1dbad;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 60px;
+    padding: 20px;
+    transition: all .3s ease-in;
+
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 150px;
+
+}
+
+.service_area {
+    background-image: url(images/sunrise.jpg);
+    padding: 50px;
+    z-index: 100;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: antiquewhite;
+}
+
+.card-container .card-image {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-position: center center;
+    background-size: cover;
+}
+
+.card-container .card-title {
+    padding: 20px 10px;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    text-shadow: 1px 0px 2px #094b65;
+
+}
+
+.card-container:nth-child(2) .card-image {
+    background: url(images/service-icon-1.svg);
+    background-size: 100%;
+}
+
+.card-container:nth-child(3) .card-image {
+    background: url(images/service-icon-2.svg);
+    background-size: 100%;
+}
+
+.card-container:nth-child(4) .card-image {
+    background: url(images/service-icon-3.svg);
+    background-size: 100%;
+}
+
+.serve1 {
+    font-size: 55px;
+    color: rgb(19, 83, 110);
+    font-family: 'Prata', serif;
+}
+
+.serve {
+    color: black;
+    font-size: 22px;
+    font-family: 'Prata', serif;
+}
+
+.card-container:hover {
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    transition: 150ms;
+    cursor: pointer;
+}
+
+.py-4 {
+    padding: 4rem 0;
+    background: url(/images/beach2.jpg);
+    background-repeat: no-repeat;
+    background-size: 153%;
+}
+
+.des {
+    width: 100%;
+    display: block;
+    padding: 10px;
+
+}
+
+.title-wrap {
+    text-align: center;
+    padding: 1.4rem 0;
+    margin-bottom: 0.5rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.lg-title {
+    font-size: 1.8rem;
+    color: #094b65;
+}
+
+.sm-title {
+    display: block;
+    color: black;
+    font-weight: 300;
+    font-size: 1.2rem;
+    padding-bottom: 1rem;
+    max-width: 450px;
+    margin-right: auto;
+    margin-left: auto;
+    line-height: 1.7;
+}
+
+.des_container{
+    position: relative;
+    width: 1400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px;
+}
+ .des_container .des_card{
+    position: relative;
+    max-width: 300px;
+    height: 215px;
+    background: #fff;
+    margin: 30px 10px;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+    transition: 0.3s ease-in-out;
+}
+.des_container .des_card:hover{
+    height: 420px;
+}
+.des_container .des_card .imgBx{
+    position: relative;
+    max-width: 300px;
+    height: 260px;
+    top: -60px;
+    left: 20px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+}
+
+.des_container .des_card .imgBx img{
+    max-width: 100%;
+    border-radius: 4px;
+}
+.des_container .des_card .des_content{
+    position: relative;
+    margin-top: -140px;
+    padding: 10px 15px;
+    text-align: center;
+    color: #111;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+}
+.des_container .des_card:hover .des_content
+{
+    visibility: visible;
+    opacity: 1;
+    margin-top: -40px;
+    transition-delay: 0.3s;
+}
+
+

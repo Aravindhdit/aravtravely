@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="booking.css">
+</head>
+<body>
+    <div class="popup open-popup" id="popup">
+        <img src="images/tick.png"  alt="">
+        <h2>Thank You!</h2>
+        <p>Your Booking Has Been Confirmed <br><br>
+            Have a safe journey!!
+        </p>
+        <button type="ok" onclick="hrefFunction()">OK</button>
+    </div>
+
+<script>
+    let popup = document.getElementById('popup');
+
+    function openPopup(){
+        popup.classList.add("open-popup");
+    }
+    function closePopup(){
+        popup.classList.remove("open-popup");
+    }
+    function hrefFunction(){
+        window.location.href="booking.html";
+    }
+
+
+
+</script>
+    
+</body>
+</html>
